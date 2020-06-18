@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        
+        <title>Bucurestiul in culori</title>
+            
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <link href='https://fonts.googleapis.com/css?family=Lora:400,400italic|Work+Sans:300,400,500,600' rel='stylesheet' type='text/css'>
+        <link href="bootstrapthemes/theme-marketing-extended-3/v4/docs/assets/css/toolkit-startup.css" rel="stylesheet">
+        <link href="bootstrapthemes/theme-marketing-extended-3/v4/docs/assets/css/application-startup.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+        <script src="final.js"></script>
+        <script src='https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js'></script>
+        <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css' rel='stylesheet' />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+
+    <body>
+        <div class="container">
+            <nav class="navbar navbar-expand-md navbar-fixed-top navbar-transparent bg-faded">
+                <a class="navbar-brand" href="index.html"><img src="img/Logo.png" width="300px"></a>
+                <button class="navbar-toggler mt-3" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+                    <ul class="nav navbar-nav ">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#divider">Andrei Cajvan - Profile</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <main>
+                <div class="block text-center" id="FirstBlock">
+                    <div class="block-foreground my-5">
+                      <h1 class="block-title"><span class="text-ribbon text-ribbon-info">Bucureștiul în culori</span></h1>
+                      <h4 class="mt-5"><span class="text-ribbon text-ribbon-info">Bucureștiul, asemenea multor orașe din România, este văzut ca un oraș predominant gri și mohorât.<br>De aceea, am hotărât să-l colorăm noi în viile culori ale curcubeului.</span></h4>
+                    </div>
+                    <div class="block-background">
+                      <img class="img-fluid" src="https://www.bucuresti-centenar.ro/wp-content/uploads/2018/04/plansa-de-colorat-ateneul-roman.jpg">
+                    </div>
+                </div>
+                <div class="block block-inverse text-center mt-5 d-flex flex-column align-items-center" id="SecondBlock">
+                    <div class="block-foreground">
+                      <button id="mapButton" class="btn btn-lg btn-info btn-pill mt-1">Dă-i culoare!</button>
+                    </div>
+                    <div class="block-background grayscale" id="mapbox">
+                      <iframe frameBorder="0" src="https://api.mapbox.com/styles/v1/andreicaj/ckbjfz7ci2euk1is39smg6uq8.html?fresh=true&title=view&access_token=pk.eyJ1IjoiYW5kcmVpY2FqIiwiYSI6ImNrYmpmbDNheTBvbXkyd21iamtzZmtqcTcifQ.R3g-sU9JLUivSn1Pp-ROhw"></iframe>
+                    </div>
+                </div>
+                <script>
+                    $('#mapButton').on('click', function(){
+                        $('#mapbox').toggleClass('grayscale');
+                    });
+                </script>
+                <div class="container-fluid" id="divider"></div>
+                <div class="block block-inverse text-center shadow-lg" id="ThirdBlock">
+                    <div class="block-foreground">
+                        <h1 class="block-title text-ribbon text-ribbon-primary">Profile</h1>
+                    </div>
+                    <div class="block-background">
+                        <img class="img-fluid" id="cute" src="img/AA029.jpg">
+                    </div>
+                </div>
+                <div class="container-fluid shadow-lg" id="divider2"></div>
+                <div id="profile" class="container-fluid w-75">                    
+                    <div class="row my-4 pt-5">
+                      <div class="col-sm-8">
+                        <ul class="featured-list featured-list-bordered">
+                          <li class="mb-5">
+                            <div class="featured-list-icon">
+                              <span class="icon icon-v-card"></span>
+                            </div>
+                  
+                            <h3 class="pt-2">Andrei Cajvan</h3>
+                          </li>
+                  
+                          <li class="mb-5">
+                            <div class="featured-list-icon">
+                              <span class="icon icon-cake"></span>
+                            </div>
+                            <h3 class="pt-2">28 de ani</h3>
+                          </li>
+                          <li class="mb-5">
+                            <div class="featured-list-icon">
+                              <span class="icon icon-new-message"></span>
+                            </div>
+                            <h3>Bio</h3>
+                            <p style="font-family: 'Work sans', sans-serif; font-size: 20px;">Hi, people,<br>
+                            Mersi de oportunitate!<br>
+                            Pe scurt: am absolvit in iulie 2019 cursurile Scolii Informale de IT, in urma carora am obtinut o specializare in Front End Development si sunt calificat in HTML, CSS, Javascript, jQuery si Bootstrap.<br>
+                            In cadrul cursului am aplicat tehnici de responsive design (folosind atat Bootstrap cat si CSS Grid) si metode AJAX (incluzand Fetch API).<br>
+                            Am, de asemenea, experienta de 5 ani in team management in industria HoReCa, de unde incerc sa evadez.<br>
+                            Sper sa lucram impreuna pentru ca sunt convins ca am sa gasesc oameni de la care sa pot invata lucruri faine. 
+                           </p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col-sm-4">
+                        <ul class="featured-list featured-list-bordered">
+                          <li class="mb-5">
+                            <div class="featured-list-icon">
+                              <span class="icon icon-old-mobile"></span>
+                            </div>
+                  
+                            <h3 class="pt-2">0741 067 901</h3>
+                          </li>
+                  
+                          <li class="mb-5">
+                            <div class="featured-list-icon">
+                              <span class="icon icon-mail"></span>
+                            </div>
+                            <h3 class="pt-2"><a href="mailto:and.cajvan@gmail.com">and.cajvan@gmail.com</a></h3>
+                          </li>
+                        <li class="mb-5">
+                            <div class="featured-list-icon">
+                              <span class="icon icon-linkedin"></span>
+                            </div>
+                            <h3 class="pt-2"><a href="https://www.linkedin.com/in/andrei-cajvan/">Profile</a></h3>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+            </main>
+            <footer class="navbar-transparent mt-4 d-flex justify-content-around">
+                <div class="col-lg-4 col-md-6">
+                  <ul class="">
+                    <li class="">About us</li>
+                    <li class="">Contact</li>
+                    <li class="">FAQ</li>
+                    <li class="">Careers</li>
+                  </ul>
+                </div>
+                <div id="social" class="col-lg-4 col-md-6">
+                    <p>Find us on:</p>
+                    <ul class="d-inline-flex">
+                      <li><a href="#"><span class="icon icon-facebook-with-circle"></span></a></li>
+                      <li><a href="#"><span class="icon icon-instagram-with-circle"></span></a></li>
+                      <li><a href="#"><span class="icon icon-twitter-with-circle"></span></a></li>
+                      <li><a href="#"><span class="icon icon-linkedin-with-circle"></span></a></li>
+                      <li><a href="#"><span class="icon icon-mail-with-circle"></span></a></li>
+                    </ul>
+                  </div>
+              </footer>
+        </div>
+    </body>
+</html>

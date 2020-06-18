@@ -1,0 +1,160 @@
+@font-face {
+    font-family: Pier;
+    src: url(fonts/PierSans-Bold.otf);
+  }
+
+.container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Pier, sans-serif !important;
+}
+.main {
+    width: 100%;
+}
+
+.navbar {
+    position: fixed;
+    right:0;
+    left:0;
+    top:0px;
+    z-index: 3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 0 1rem;
+}
+
+.navbar-container {
+    position: relative;
+    background-color: rgba(240, 248, 255, 0.253);
+    margin: 30px 0;
+}
+
+.navbar-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-bottom: 0;
+    list-style: none; 
+    text-shadow: 1px 1px 2px #373e44;
+}
+.nav-item {
+    padding:0px 25px;
+}
+.navbar-transparent{
+    background-color: rgba(255, 137, 90, 0.397)
+}
+
+.nav-link {
+    font-size:2rem;
+    padding: 15px 0;
+}
+.navbar-brand{
+    font-size:3rem;
+    margin-left: 20px;
+}
+
+#FirstBlock {
+    margin-top: 5rem;
+    height: 50vh;
+}
+
+#SecondBlock {
+    height: 60vh;
+}
+
+#ThirdBlock {
+    height: 355px;
+    background-image: linear-gradient(rgb(0, 0, 0), #24284b); ;
+}
+
+.text-ribbon-info {
+    background-color: #5bc0dece;
+    font-family: Pier, sans-serif;
+    font-stretch: extra-expanded;
+    line-height: 3rem;
+    color: white;
+    text-shadow: 1px 1px 2px #373e44;
+    letter-spacing: 0.1rem;
+}
+
+.text-ribbon-primary {
+    background-color: rgba(255, 137, 90, 0.562);
+    font-family: Pier, sans-serif;
+}
+
+.text-ribbon::before {
+    display: none;
+}
+
+h1 {
+    font-size: 4.5rem !important;
+}
+
+.featured-list-icon {
+    line-height: 55px !important;
+    height: 55px !important;
+    width: 55px !important;
+}
+
+.grayscale {
+    -webkit-filter: grayscale(1);
+}
+
+.btn-lg {
+    font-size: 28px;
+}
+
+.block-foreground {
+    margin: auto 0;
+}
+
+#cute {
+    border-radius: 5rem;
+}
+
+#divider {
+    height: 80px;
+    background-color: black;
+    padding: 0;
+}
+
+#divider2 {
+    height: 80px;
+    background-color: #24284b;
+    padding: 0;
+}
+
+footer {
+    font-size: 1.4em;
+    padding: 12px 0px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding-inline-start: 0px;
+}
+
+footer li {
+    padding: 8px 0px;
+}
+
+#social {
+    margin-bottom: 50px;
+    padding-top: 8px;
+    
+}
+
+#social li {
+    padding: 0px 5px;
+    font-size: 2em;
+}
